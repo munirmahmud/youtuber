@@ -1,4 +1,11 @@
 /* Normal desktop :1200px. */
+@media (min-width: 1200px) {
+    .content-half p:nth-child(3) {
+        min-width: 100%;
+        left: -97%;
+        position: absolute;
+    }
+}
 @media (min-width: 1200px) and (max-width: 1500px) {
 
 

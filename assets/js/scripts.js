@@ -1,7 +1,7 @@
 (function ($) {
 "use strict";
 
-
+// Owl carousel for brands
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:0,
@@ -17,10 +17,20 @@ $('.owl-carousel').owlCarousel({
             items:3
         },
         992:{
-            items:5
+            items:4
         }
     }
-})
+});
+
+// Owl carousel for success stories
+$('.success-wrapper.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+	items:1,
+	// navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+    nav:true,
+	dots:true
+});
 
 
 /* magnificPopup img view */

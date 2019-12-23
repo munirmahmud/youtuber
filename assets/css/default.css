@@ -289,7 +289,7 @@
 .pt-75 {
 	padding-top: 75px;
 }
-.pt-80 {
+.pt-80, .py-80 {
 	padding-top: 80px;
 }
 .pt-85 {
@@ -313,7 +313,7 @@
 .pt-115 {
 	padding-top: 115px;
 }
-.pt-120 {
+.pt-120, .py-120 {
 	padding-top: 120px;
 }
 .pt-125 {
@@ -411,7 +411,7 @@
 .pb-75 {
 	padding-bottom: 75px;
 }
-.pb-80 {
+.pb-80, .py-80 {
 	padding-bottom: 80px;
 }
 .pb-85 {
@@ -435,7 +435,7 @@
 .pb-115 {
 	padding-bottom: 115px;
 }
-.pb-120 {
+.pb-120, .py-120 {
 	padding-bottom: 120px;
 }
 .pb-125 {
