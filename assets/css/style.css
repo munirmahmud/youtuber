@@ -449,4 +449,5 @@ ul.list-items li:before {
     height: 40px;
 	width: 40px;
 	color: var(--white);
+	cursor: pointer;
 }
