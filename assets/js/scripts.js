@@ -2,7 +2,7 @@
 "use strict";
 
 // Owl carousel for brands
-$('.owl-carousel').owlCarousel({
+$('.brands-wrapper').owlCarousel({
     loop:true,
     margin:0,
 	items:1,
@@ -23,13 +23,33 @@ $('.owl-carousel').owlCarousel({
 });
 
 // Owl carousel for success stories
-$('.success-wrapper.owl-carousel').owlCarousel({
+$('.success-wrapper').owlCarousel({
     loop:true,
     margin:0,
 	items:1,
-	// navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
     nav:true,
 	dots:true
+});
+
+// Owl carousel for testimonials
+$('.testimonial-wrapper').owlCarousel({
+    loop: true,
+    margin: 30,
+	items: 1,
+	nav: false,
+	center: true,
+	dots: true,
+	responsive:{
+        0:{
+            items:1
+        },
+        767:{
+            items:2
+        },
+        992:{
+            items:3
+        }
+    }
 });
 
 
