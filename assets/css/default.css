@@ -310,7 +310,7 @@
 .pt-110 {
 	padding-top: 110px;
 }
-.pt-115 {
+.pt-115, .py-115 {
 	padding-top: 115px;
 }
 .pt-120, .py-120 {
@@ -432,7 +432,7 @@
 .pb-110 {
 	padding-bottom: 110px;
 }
-.pb-115 {
+.pb-115, .py-115 {
 	padding-bottom: 115px;
 }
 .pb-120, .py-120 {

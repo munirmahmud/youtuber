@@ -327,3 +327,8 @@ label {
 .content-half p:nth-child(3) {
     margin-top: 8px;
 }
+
+/* Package */
+.heading h2 {
+    margin-bottom: 10px;
+}
