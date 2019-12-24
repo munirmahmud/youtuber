@@ -27,7 +27,7 @@ $('.success-wrapper').owlCarousel({
     loop:true,
     margin:0,
 	items:1,
-    nav:true,
+    nav:false,
 	dots:true
 });
 

@@ -29,6 +29,7 @@
 	--light-black: #777;
 	--gray: #f9f9ff;
 	--black-mid: #252b37;
+	--gray-mid: #cccccc;
 }
 
  body {
@@ -450,4 +451,16 @@ ul.list-items li:before {
 	width: 40px;
 	color: var(--white);
 	cursor: pointer;
+}
+.socials li a {
+    color: var(--gray-mid);
+}
+.socials li a:hover {
+    color: var(--red);
+}
+.socials li:not(:last-child) {
+    margin-right: 20px;
+}
+.socials p {
+    margin-bottom: 8px;
 }
