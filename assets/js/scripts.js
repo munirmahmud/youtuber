@@ -3,32 +3,32 @@
 
 // Owl carousel for brands
 $('.brands-wrapper').owlCarousel({
-    loop:true,
-    margin:0,
-	items:1,
-	navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-    nav:true,
-	dots:false,
-    responsive:{
+    loop: true,
+    margin: 0,
+	items: 1,
+	navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+    nav: true,
+	dots: false,
+    responsive: {
         0:{
-            items:1
+            items: 1
         },
         767:{
-            items:3
+            items: 3
         },
         992:{
-            items:4
+            items: 4
         }
     }
 });
 
 // Owl carousel for success stories
 $('.success-wrapper').owlCarousel({
-    loop:true,
-    margin:0,
-	items:1,
-    nav:false,
-	dots:true
+    loop: true,
+    margin: 15,
+	items: 1,
+    nav: false,
+	dots: true
 });
 
 // Owl carousel for testimonials
@@ -41,30 +41,27 @@ $('.testimonial-wrapper').owlCarousel({
 	dots: true,
 	responsive:{
         0:{
-            items:1
+            items: 1
         },
         767:{
-            items:2
+            items: 2
         },
         992:{
-            items:3
+            items: 2
         }
     }
 });
 
 
-/* magnificPopup img view */
-$('.popup-image').magnificPopup({
-	type: 'image',
-	gallery: {
-	  enabled: true
-	}
-});
+/* magnificPopup video view */
+$('.hero-video, .success-video').magnificPopup( {
+	type: 'iframe',
+} );
 
 /* magnificPopup video view */
-$('.popup-video').magnificPopup({
-	type: 'iframe'
-});
+// $('.success-video').magnificPopup({
+// 	type: 'iframe'
+// });
 
 
 

@@ -48,6 +48,10 @@ a,
 	-o-transition: all 0.3s ease-out 0s;
 	transition: all 0.3s ease-out 0s;
 }
+img {
+	max-width: 100%;
+	height: auto;
+}
 a:focus,
 button:focus {
 	text-decoration: none;
@@ -77,7 +81,7 @@ h6 a {
 	color: inherit;
 }
 h1 {
-	font-size: 48;
+	font-size: 48px;
 }
 h2 {
 	font-size: 36px;
@@ -139,22 +143,6 @@ label {
 	font-size: 14px;
 	opacity: 1;
 }
-.theme-overlay {
-	position: relative
-}
-.theme-overlay::before {
-	background: #1696e7 none repeat scroll 0 0;
-	content: "";
-	height: 100%;
-	left: 0;
-	opacity: 0.6;
-	position: absolute;
-	top: 0;
-	width: 100%;
-}
-.separator {
-	border-top: 1px solid #f2f2f2
-}
 
 /* button style */
 .btn {
@@ -210,15 +198,11 @@ label {
 	background: var(--black);
 }
 
-.breadcrumb > .active {
-	color: #888;
-}
 .owl-carousel .owl-item img {
-	max-width: 100%;
     width: auto;
     margin: auto;
 }
-.nav-arrow .owl-carousel .owl-nav div {
+.nav-arrows .owl-nav div {
 	background: var(--red) none repeat scroll 0 0;
 	left: 20px;
 	position: absolute;
@@ -235,15 +219,15 @@ label {
 	visibility: hidden;
 	opacity: 0;
 }
-.nav-arrow .owl-carousel .owl-nav div.owl-next {
+.nav-arrows .owl-nav div.owl-next {
 	left: auto;
 	right: 20px;
 }
-.nav-arrow .owl-carousel:hover .owl-nav div {
+.nav-arrows:hover .owl-nav div {
 	opacity: 1;
 	visibility: visible;
 }
-.nav-arrow .owl-carousel .owl-nav div:hover {
+.nav-arrows .owl-nav div:hover {
 	background: transparent;
 	color: var(--red);
 	border: 1px solid var(--red);
@@ -295,10 +279,25 @@ label {
 .navbar-light .navbar-nav .nav-link:hover {
 	color: var(--white);
 }
+.menu-btn {
+    margin-left: 60px;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: var(--white);
+    color: var(--white);
+    margin-left: auto;
+}
+.navbar-toggler span {
+    /* width: 1em;
+    height: 1em;
+    vertical-align: middle; */
+}
+
 
 /* Hero */
 .hero {
-    min-height: calc(100vh - 80px);
+    min-height: calc(95vh - 80px);
 }
 .hero-content h1 {
     line-height: 1.14;
