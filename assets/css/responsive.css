@@ -5,7 +5,10 @@
         left: -97%;
         position: absolute;
     }
-    .menu-btn {display: block !important;}
+    .menu-btn {
+        display: inline-block;
+        float: right;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1500px) {
 
@@ -15,7 +18,10 @@
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-    .menu-btn {display: block !important;}
+    .menu-btn {
+        display: inline-block;
+        float: right;
+    }
     
 
 }
