@@ -17,17 +17,38 @@
 
 
 /* Normal desktop :992px. */
+@media (max-width: 1200px) {
+    .large-section-content, 
+    .left-sec {
+        max-width: 720px;
+    }
+    .large-section-content {
+        padding-left: 0px;
+        margin: auto;
+    }
+    .left-sec {
+        margin: 0 auto 30px;
+    }
+    .team-members .team-thumb img {
+        width: 100%;
+    }
+}
+
+
 @media (min-width: 992px) and (max-width: 1200px) {
     .menu-btn {
         display: inline-block;
         float: right;
     }
+    /* About Page */
+    .large-section-content {
+        padding-left: 0px;
+        padding-right: 15px;
+    }
     
-
 }
 
- 
-/* Tablet desktop :768px. */
+
 @media (min-width: 768px) and (max-width: 991px) {
     .hero .col-md-6,
     .success-wrapper .col-md-6{
@@ -54,6 +75,12 @@
         width: 0;
         height: 0;
         bottom: 0;
+    }
+    .nav-arrows-right .owl-nav {
+        right: 32px;
+        top: auto;
+        transform: rotate(-90deg);
+        bottom: -55px;
     }
 }
 
@@ -86,6 +113,19 @@
     .navbar-light .navbar-nav .nav-link {
         border-bottom: 1px solid #ef0505;
         padding: 5px 20px;
+    }
+    .testimonial-box.owl-carousel.owl-loaded {
+        margin: auto;
+    }
+    .nav-arrows-right .owl-nav {
+        right: 32px;
+        top: auto;
+        transform: rotate(-90deg);
+        bottom: -55px;
+    }
+    .full-width.left .p-0 {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
     }
  
 }

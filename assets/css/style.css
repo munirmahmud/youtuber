@@ -85,6 +85,7 @@ h1 {
 }
 h2 {
 	font-size: 36px;
+	font-weight: 600;
 }
 h3 {
 	font-size: 28px;
@@ -94,6 +95,7 @@ h4 {
 }
 h5 {
 	font-size: 18px;
+	font-weight: 600;
 }
 h6 {
 	font-size: 16px;
@@ -106,14 +108,23 @@ ul {
 li {
 	display: inline-block;
 }
+.seperator {
+	background: #eeeeee;
+	height: 1px;
+}
 hr {
 	border-bottom: 1px solid #eceff8;
 	border-top: 0 none;
 	margin: 30px 0;
 	padding: 0;
 }
+.bg-img {
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 label {
-	color: #7e7e7e;
+	color: var(--light-black);
 	cursor: pointer;
 	font-size: 14px;
 	font-weight: 400;
@@ -145,6 +156,12 @@ label {
 }
 .shadow{
 	box-shadow: 0px 5px 20px 0px rgba(157, 157, 157, 0.1);
+}
+.box-shadow {
+	box-shadow: -21.213px 21.213px 30px 0px rgba(127, 127, 127, 0.5);
+}
+.text-shadow {
+	text-shadow: -8.485px 8.485px 10px rgba(127, 127, 127, 0.5);
 }
 .breadcrumb {
     padding: 0;
@@ -253,6 +270,35 @@ label {
 	color: var(--red);
 	border: 1px solid var(--red);
 }
+/* Nav Arrows Right */
+.nav-arrows-right .owl-nav {
+    position: absolute;
+    right: -95px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(255, 255, 255);
+    box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.2);
+    width: 40px;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-arrows-right .owl-nav div {
+	height: 52px;
+    line-height: 50px;
+    font-size: 20px;
+	color: #bcbcbc;
+	transition: color .4s linear;
+}
+.nav-arrows-right .owl-nav div:hover {
+    color: #313131;
+}
+.nav-arrows-right .owl-nav .owl-next {
+    border-top: 1px solid #e8e8e8;
+}
+/* Nav dots */
 .nav-dots .owl-dots {
 	text-align: center;
 }
@@ -265,6 +311,19 @@ label {
 }
 .nav-dots .owl-dots .owl-dot.active {
 	background: var(--red);
+}
+.nav-black-dots .owl-dots .owl-dot.active {
+    background: var(--black);
+    width: 50px;
+    border-radius: 30px;
+}
+.nav-black-dots .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    background: #d3d3d3;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50%;
 }
 
 
@@ -359,6 +418,9 @@ label {
 .red-overlay[data-overlay]::before{
 	background: var(--red) none repeat scroll 0 0;
 }
+.black-overlay[data-overlay]::before{
+	background: var(--black) none repeat scroll 0 0;
+}
 .content-half p:nth-child(2) {
     color: var(--white);
 }
@@ -447,6 +509,112 @@ ul.list-items li:before {
 /* ----------------------------------------------
 	About Us
 ----------------------------------------------- */
+.about-carousel-content {
+	padding-right: 30px;
+}
+.about-carousel-content .icon {
+    margin-bottom: 36px;
+}
+.about-carousel-content h5 {
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.about-carousel .icon img {
+    max-width: 100%;
+    margin: initial;
+}
+.large-section-content {
+    max-width: 565px;
+    padding-left: 68px;
+}
+.large-section-content h2 {
+    margin-bottom: 25px;
+    line-height: 45px;
+}
+
+/* Team Heading */
+.team-details {
+    margin-top: 35px;
+}
+.team-details h5 {
+    margin-bottom: 5px;
+}
+.team-socials {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	transition: all 0.4s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+}
+.team-socials li a {
+    color: #fff;
+    font-size: 16px;
+}
+.team-socials li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.team-wrapper .team-thumb:before {
+	content: '';
+	position: absolute;
+	background: var(--red);
+	width: 100%;
+	height: 100%;
+	top: -100%;
+	left: 0;
+	z-index: 1;
+	opacity: 0.8;
+	transition: all 0.4s ease-in-out;
+}
+.team-wrapper:hover .team-thumb:before {
+	top: 0%;
+}
+.team-wrapper:hover .team-socials {
+	left: 50%;
+	visibility: visible;
+	opacity: 1;
+}
+.service-item {
+	transition: background .4s linear;
+    padding: 42px 40px;
+}
+.service-item:hover {
+	background: var(--red);
+	box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.5);
+}
+.service-item .icon {
+    margin-bottom: 22px;
+}
+.service-item .icon img {
+    margin-right: 20px;
+}
+/* Testimonial for About page  */
+.testimonial-item.left {
+	padding: 40px;
+	transition: all .4s linear;
+}
+.testimonial-item.left:hover {
+    background-color: var(--white);
+    box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.2);
+}
+.testimonial-item.left .icon {
+    float: left;
+    margin-right: 30px;
+}
+.testimonial-item.left p {
+	margin-bottom: 26px;
+}
+.testimonial-item.left h5 {
+	margin-bottom: 5px;
+}
+.testimonial-item.left:hover h5 {
+	color: var(--red);
+}
+
+
 
 /* Footer */
 .footer h5 {

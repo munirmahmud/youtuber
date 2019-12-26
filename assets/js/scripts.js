@@ -1,6 +1,15 @@
 (function ($) {
 "use strict";
 
+    // Background Image
+    $("[data-bg]").each( function(){
+		$(this).css("background-image", "url(" + $(this).attr('data-bg') +")")
+    });
+    
+    // $('[data-bg]').each( () => {
+    //     $(this).css('background-image', "url("+ $(this).attr('data-bg') +")");
+    // })
+
 // Owl carousel for brands
 $('.brands-wrapper').owlCarousel({
     loop: true,
@@ -47,23 +56,44 @@ $('.testimonial-wrapper').owlCarousel({
             items: 2
         },
         992:{
-            items: 2
+            items: 3
         }
     }
 });
 
+// Owl carousel for testimonials left
+$('.testimonial-box').owlCarousel({
+    loop: true,
+    margin: 30,
+	items: 1,
+	nav: true,
+    navText: ['<i class="fa fa-arrow-up"></i>','<i class="fa fa-arrow-down"></i>'],
+	dots: false,
+	responsive:{
+        0:{
+            items: 1
+        },
+        992:{
+            items: 2
+        },
+    }
+});
+
+
+// Owl carousel for success stories
+$('.about-carousel').owlCarousel({
+    loop: true,
+    margin: 0,
+	items: 1,
+    nav: false,
+	dots: true
+});
+
 
 /* magnificPopup video view */
-$('.hero-video, .success-video').magnificPopup( {
+$('.hero-video, .success-video, .about-video').magnificPopup( {
 	type: 'iframe',
 } );
-
-/* magnificPopup video view */
-// $('.success-video').magnificPopup({
-// 	type: 'iframe'
-// });
-
-
 
 $('.grid').imagesLoaded( function() {
 	// init Isotope

@@ -486,27 +486,8 @@
 .pb-200 {
 	padding-bottom: 200px;
 }
-/* Background Color */
 
-.gray-bg {
-	background: #f6f6f6;
-}
-.white-bg {
-	background: #fff;
-}
-.black-bg {
-	background: #222;
-}
-/* Color */
-
-.white {
-	color: #fff;
-}
-.black {
-	color: #222;
-}
 /* black overlay */
-
 [data-overlay] {
 	position: relative;
 }
@@ -518,7 +499,6 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index: 1;
 }
 [data-overlay="3"]::before {
 	opacity: 0.3;
